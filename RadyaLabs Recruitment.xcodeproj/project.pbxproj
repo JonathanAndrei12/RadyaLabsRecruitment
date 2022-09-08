@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEBD5F7428CA5A3C00B31B3B /* FoodDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD5F7328CA5A3C00B31B3B /* FoodDetailsView.swift */; };
+		DEBD5F7728CA655B00B31B3B /* NetworkObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD5F7628CA655B00B31B3B /* NetworkObservers.swift */; };
 		DEE8C9B128C8AAE7007410A8 /* RadyaLabs_RecruitmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C9B028C8AAE7007410A8 /* RadyaLabs_RecruitmentApp.swift */; };
-		DEE8C9B328C8AAE7007410A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8C9B228C8AAE7007410A8 /* ContentView.swift */; };
 		DEE8C9B528C8AAE8007410A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE8C9B428C8AAE8007410A8 /* Assets.xcassets */; };
 		DEE8C9B828C8AAE8007410A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE8C9B728C8AAE8007410A8 /* Preview Assets.xcassets */; };
+		DEEF54C128C9C9B6000BA887 /* ListFoodsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF54C028C9C9B6000BA887 /* ListFoodsViewModel.swift */; };
+		DEEF54C328C9F590000BA887 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF54C228C9F590000BA887 /* Food.swift */; };
+		DEEF54CA28C9FD21000BA887 /* ListFoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF54C928C9FD21000BA887 /* ListFoodsView.swift */; };
+		DEEF54CD28C9FFC3000BA887 /* FoodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF54CC28C9FFC3000BA887 /* FoodCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DEBD5F7328CA5A3C00B31B3B /* FoodDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsView.swift; sourceTree = "<group>"; };
+		DEBD5F7628CA655B00B31B3B /* NetworkObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkObservers.swift; sourceTree = "<group>"; };
 		DEE8C9AD28C8AAE7007410A8 /* RadyaLabs Recruitment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RadyaLabs Recruitment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE8C9B028C8AAE7007410A8 /* RadyaLabs_RecruitmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadyaLabs_RecruitmentApp.swift; sourceTree = "<group>"; };
-		DEE8C9B228C8AAE7007410A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEE8C9B428C8AAE8007410A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE8C9B728C8AAE8007410A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEEF54C028C9C9B6000BA887 /* ListFoodsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoodsViewModel.swift; sourceTree = "<group>"; };
+		DEEF54C228C9F590000BA887 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		DEEF54C928C9FD21000BA887 /* ListFoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoodsView.swift; sourceTree = "<group>"; };
+		DEEF54CC28C9FFC3000BA887 /* FoodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DEBD5F7528CA654700B31B3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD5F7628CA655B00B31B3B /* NetworkObservers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DEE8C9A428C8AAE7007410A8 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +69,11 @@
 		DEE8C9AF28C8AAE7007410A8 /* RadyaLabs Recruitment */ = {
 			isa = PBXGroup;
 			children = (
+				DEBD5F7528CA654700B31B3B /* Extensions */,
+				DEEF54BF28C9C996000BA887 /* Model */,
+				DEEF54BE28C9C990000BA887 /* ViewModel */,
+				DEEF54BD28C9C989000BA887 /* View */,
 				DEE8C9B028C8AAE7007410A8 /* RadyaLabs_RecruitmentApp.swift */,
-				DEE8C9B228C8AAE7007410A8 /* ContentView.swift */,
 				DEE8C9B428C8AAE8007410A8 /* Assets.xcassets */,
 				DEE8C9B628C8AAE8007410A8 /* Preview Content */,
 			);
@@ -65,6 +86,40 @@
 				DEE8C9B728C8AAE8007410A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEEF54BD28C9C989000BA887 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEEF54C928C9FD21000BA887 /* ListFoodsView.swift */,
+				DEBD5F7328CA5A3C00B31B3B /* FoodDetailsView.swift */,
+				DEEF54CB28C9FFB1000BA887 /* Assets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEEF54BE28C9C990000BA887 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEEF54C028C9C9B6000BA887 /* ListFoodsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEEF54BF28C9C996000BA887 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEEF54C228C9F590000BA887 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEEF54CB28C9FFB1000BA887 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DEEF54CC28C9FFC3000BA887 /* FoodCard.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +138,8 @@
 			dependencies = (
 			);
 			name = "RadyaLabs Recruitment";
+			packageProductDependencies = (
+			);
 			productName = "RadyaLabs Recruitment";
 			productReference = DEE8C9AD28C8AAE7007410A8 /* RadyaLabs Recruitment.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +168,8 @@
 				Base,
 			);
 			mainGroup = DEE8C9A428C8AAE7007410A8;
+			packageReferences = (
+			);
 			productRefGroup = DEE8C9AE28C8AAE7007410A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE8C9B328C8AAE7007410A8 /* ContentView.swift in Sources */,
+				DEBD5F7428CA5A3C00B31B3B /* FoodDetailsView.swift in Sources */,
+				DEEF54C128C9C9B6000BA887 /* ListFoodsViewModel.swift in Sources */,
+				DEEF54C328C9F590000BA887 /* Food.swift in Sources */,
+				DEEF54CD28C9FFC3000BA887 /* FoodCard.swift in Sources */,
 				DEE8C9B128C8AAE7007410A8 /* RadyaLabs_RecruitmentApp.swift in Sources */,
+				DEBD5F7728CA655B00B31B3B /* NetworkObservers.swift in Sources */,
+				DEEF54CA28C9FD21000BA887 /* ListFoodsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct RadyaLabs_RecruitmentApp: App {
+    init() {
+        let appearance =  UINavigationBarAppearance()
+        appearance.shadowColor = .clear
+        appearance.backgroundColor = UIColor(named: "NavBarBackground")
+//        appearance.titleTextAttributes = [.foregroundColor : UIColor.white]
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().standardAppearance = appearance
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListFoodsView()
         }
     }
 }
